@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="120dp"
+        android:text=" Time : "
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/data"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/time"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/time"
+        android:autofillHints=""
+        android:hint="Seconds"
+
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/data"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="132dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/finaly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="120dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
